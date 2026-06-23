@@ -1,0 +1,50 @@
+# ============================================================
+#  Multi-Modal Visual Engine – root .gitignore
+# ============================================================
+
+# ----- Secrets / Environment --------------------------------
+.env
+.env.local
+.env.*.local
+# keep the example template
+!.env.example
+
+# ----- Python / Backend -------------------------------------
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ----- Database & generated data ----------------------------
+backend/data/mvse.db
+backend/data/images/
+backend/data/index/
+
+# ----- Node / Frontend --------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+
+# ----- Logs -------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----- OS / Editor ------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
